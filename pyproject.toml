@@ -1,0 +1,21 @@
+[project]
+name = "steal-map"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "kc0506", email = "kchong0506@gmail.com"},
+]
+dependencies = [
+    "geojson>=3.1.0",
+    "pandas>=2.2.2",
+    "httpx>=0.27.0",
+    "rich>=13.7.1",
+    "tqdm>=4.66.5",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
