@@ -1,50 +1,14 @@
-# React + TypeScript + Vite
+![demo](./demo.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align=center>
+  [Online demo](https://kc0506.github.io/taipei-theft-map/) · [臺北市資料大平台](https://data.taipei/)
+</div>
 
-Currently, two official plugins are available:
+# Taipei Theft Map
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+使用臺北市公開資料製作的簡易地圖，包含以下資料：
+- [自行車竊盜點位](https://data.taipei/dataset/detail?id=5c5e9e13-9803-47c0-bbd2-1a4b3c11c49b)
+- [住宅竊盜點位](https://data.taipei/dataset/detail?id=68785231-d6c5-47a1-b001-77eec70bec02)
+- [汽車竊盜點位](https://data.taipei/dataset/detail?id=f87ad53e-79c7-48c4-aec4-f0fd8f99bfb2)
+- [機車竊盜點位](https://data.taipei/dataset/detail?id=3a0e2289-a605-4eac-af30-f4af613f456d)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
