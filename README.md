@@ -1,7 +1,9 @@
 ![demo](./demo.png)
 
-<div align=center>
-  [Online demo](https://kc0506.github.io/taipei-theft-map/) · [臺北市資料大平台](https://data.taipei/)
+<div align="center">
+
+[Online demo](https://kc0506.github.io/taipei-theft-map/) · [臺北市資料大平台](https://data.taipei/)
+
 </div>
 
 # Taipei Theft Map
