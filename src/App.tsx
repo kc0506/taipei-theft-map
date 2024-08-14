@@ -85,22 +85,11 @@ function App() {
       <Map
         mapboxAccessToken={MAPBOX_TOKEN}
         initialViewState={{
-          // [121.546578, 25.037626]
-          latitude: 25.037626,
-          longitude: 121.546578,
-          zoom: 12,
-          pitch: 0,
-        }}
-        {...
-        {
-
           latitude: 25.037626,
           longitude: 121.546578,
           zoom: 12.5,
           pitch: 0,
-        }
-        }
-
+        }}
         mapStyle="mapbox://styles/mapbox/light-v11"
         style={{
           width: '100vw',
